@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cerebro - Sovereign Thought Engine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono p-6 min-h-screen">
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-4xl font-extrabold mb-6 tracking-tight text-white">CEREBRO</h1>
+
+    <div class="mb-4">
+      <textarea id="query" class="w-full h-40 p-4 bg-gray-800 border border-gray-700 rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="/analyze What does Ibn Khaldun teach about power and decay?"></textarea>
+    </div>
+
+    <div class="flex items-center gap-4 mb-8">
+      <button onclick="askCerebro()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition duration-200">Submit</button>
+      <span id="status" class="text-sm text-gray-400 italic"></span>
+    </div>
+
+    <div id="response" class="bg-gray-800 p-6 rounded border border-gray-700 shadow-lg space-y-4 hidden">
+      <div>
+        <h2 class="text-xl font-semibold text-blue-400 mb-2">💡 Cerebro's Response</h2>
+        <pre class="whitespace-pre-wrap text-gray-200" id="output"></pre>
+      </div>
+      <div id="meta" class="text-sm text-gray-400 space-y-1">
+        <p><strong>Mode:</strong> <span id="mode"></span></p>
+        <p><strong>Domain Used:</strong> <span id="domain"></span></p>
+        <p><strong>Sources:</strong> <span id="sources"></span></p>
+        <p><strong>Response Time:</strong> <span id="duration"></span> sec</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

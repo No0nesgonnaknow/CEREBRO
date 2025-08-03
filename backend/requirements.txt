@@ -1,0 +1,16 @@
+flask
+gpt4all
+pdfminer.six
+python-docx
+python-pptx
+pytesseract
+pdf2image
+Pillow
+langdetect
+ebooklib
+chardet
+PyMuPDF
+beautifulsoup4
+watchdog
+tqdm
+uvicorn

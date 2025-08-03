@@ -1,0 +1,9 @@
+/* Optional: You can customize further if needed */
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+button:focus {
+  outline: none;
+}
